@@ -1,0 +1,1636 @@
+* {margin:0; padding:0; list-style: none}
+body {font-family: Tahoma; font-size: 11px}
+.fl {float: left}
+.fr {float: right}
+.clear {clear: both; font-size:0}
+
+.loading_2 {background: url(images/loading_2.gif) center no-repeat; padding: 4px; height: 10px;}
+
+.msg {margin: 1px 0 0 0; padding: 8px; font-family: Tahoma; font-size: 11px}
+.error {background-color: #D60800; color: #fff}
+.valid {background-color: #008313; color: #fff}
+
+.show {display: block}
+.hide {display: none}
+
+a {text-decoration: none; outline: none}
+a:hover {text-decoration: underline; outline: none}
+
+img {border:0}
+
+.body {width: 900px; padding: 0 5px 0 0; background-color: #fff; display: block; position: relative; z-index: 500}
+
+.header {position: relative; z-index: 500; width: 900px}
+.header .logo {position: absolute; width: 173px; height:75px}
+.header .t-bar {
+	background: url(images/t-bar.png) no-repeat;
+	width: 900px;
+	height: 25px;
+	margin-bottom: 5px;
+	overflow: hidden
+}
+.header .t-bar .tmenu {float: right; margin-right: 10px; margin-top: 5px}
+.header .t-bar .tmenu a {color: #525F69}
+.header .t-bar .tmenu .sep {margin: 0 4px 0 4px}
+.header .t-lm {
+	background: url(images/t-lm.png) no-repeat;
+	width: 900px;
+	height: 33px;
+	margin-bottom: 18px;
+	overflow: hidden
+}
+.header .t-lm .lmContent {
+	float: left;
+	position: relative;
+	width: 440px;
+	left: 320px;
+	margin-top: 8px;
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	color: #fff
+}
+.header .t-lm .lmContent a {color: #fff; font-weight: bold}
+.header .t-lm .goku {float: right; width: 120px; height: 33px}
+.header .t-lm .goku a {display: block; width: 120px; height: 33px}
+#newsGroup {height:20px}
+
+.header .t-900x90 {width: 900px; height: 90px; margin: 0 0 15px 0}
+.header .topmenu {width: 900px; height: 35px; overflow: hidden}
+.header .topmenu .item {
+	float: left;
+	height:35px;
+	text-align: center;
+}
+.header .topmenu .item h1 {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold
+}
+.header .topmenu .item a {color: #fff}
+.header .tm-search {
+	float: left;
+	background: url(images/menu/ms-bg.png) no-repeat;
+	width: 351px;
+	height: 35px;
+}
+.header .tm-search .search {
+	float: right;
+	margin: 6px 15px 0 0;
+}
+.header .tm-search .search .input {
+	float: left;
+	width: 130px;
+	height: 23px;
+	padding: 4px 0 0 2px;
+	margin: 0 4px 0 0
+}
+.header .tm-search .search .inputTxt {
+	background-color: transparent;
+	width: 130px;
+	padding:2px 0 2px 0;
+	border: 0;
+	font-family: Tahoma;
+	font-size: 11px
+}
+.header .tm-search .search .button {float: left; margin: 2px 0 0 0}
+.header .menu {
+	background: url(images/menu/m-bg.png) no-repeat;
+	width: 900px;
+	padding: 0 0 10px 0;
+	font: 100 12px Verdana,Geneva,Arial,Helvetica,sans-serif;
+}
+.header .menu .item {float: left; padding: 10px 0 0 0}
+.header .menu a {color: #fff}
+.header .menu .itemOver a {color: #fff; text-decoration: underline}
+.header .menu .sep {
+	background: url(images/menu/menu_sep.gif) right 11px no-repeat;
+	margin: 0 8px 0 0;
+	padding: 10px 8px 0 0;
+}
+.header .menu .first {padding: 10px 10px 0 10px}
+.header .menu .other {
+	float: right;
+	background: url(images/menu/other_bg.png) no-repeat;
+	width: 73px;
+	height: 25px;
+	margin: 5px 7px 0 0;
+	cursor: pointer;
+}
+.header .menu .menu-left {
+	width: 810px;
+	height: 35px;
+	overflow: hidden;
+}
+.header .menu .menu-right {
+	margin: 5px 10px 0 0;
+}
+
+.header .submenu {
+	background: url(images/menu/submenu-bg.png) repeat-x;
+	width: 895px;
+	padding: 5px 0 0 5px
+}
+.header .submenu .sub {padding: 4px 4px 4px 4px; float:left; width: 100px}
+.header .submenu a {display: block; font-weight: normal; color: white; text-decoration: none;}
+.header .submenu a:hover {display: block; color: #FF8282; text-decoration: none;}
+.header .submenu .line_1 {border-right: 1px dotted #444}
+.header .submenu .line_2 {border-top: 1px dotted #444; width: 890px; height: 1px; clear: both; font-size:0; padding:0; margin:0}
+
+#left {float: left; width:570px; padding: 10px 0 0 10px}
+#right {float: right; width: 300px; padding-top: 10px}
+
+#left-2 {float: left; padding: 10px 0 0 10px}
+#right-2 {float: right; width: 300px; padding-top: 10px}
+
+/*.headline {
+	background: url(images/headline/bg.png) no-repeat;
+	width: 570px;
+	height: 504px;
+	overflow: hidden;
+	margin: 0 0 10px 0
+}
+
+.headline .left {float: left; width: 280px}
+.headline .right {float: right; width: 280px; margin-right: 5px}
+.headline .left .image { position: relative; width: 260px; height: 198px; margin: 15px 0 0 15px}
+.headline .left .image img {position: absolute; z-index: 1; width: 260px; height: 198px}
+.headline .left .local {margin: 25px 0 0 13px}
+.headline .left .local .item {
+	float: left;
+	width: 84px;
+	border-top: 1px dotted #C2C7CA;
+	margin-left: 2px;
+	margin-right: 2px;
+	font-size: 10px;
+	font-weight: bold
+}
+.headline .left .local .item a {background: url(images/c_bullet.gif) 0 7px no-repeat; display: block; padding: 4px; padding-left: 10px; color: #000}
+.headline .left .local .item a:hover {background: #fff url(images/c_bullet.gif) 0 7px no-repeat; padding-left: 10px; text-decoration: none; color: #cc0000}
+.headline .left .local .all-local {
+	padding: 8px 0 0 0;
+	text-align: center;
+	font-weight: bold;
+}
+.headline .left .local .all-local a {color: #000}
+
+
+.headline .right .titles {width: 270px; margin: 10px 0 0 10px; border-top: 1px dotted #ccc;}
+.headline .right .titles li {display: block-inline}
+.headline .right .titles li.over {background-color: #fff}
+.headline .right .titles li a {
+	background: url(images/headline/arrow.gif) 0 14px no-repeat;
+	display: block;
+	height: 23px;
+	padding-top: 6px;
+	padding-left: 10px;
+	border-bottom: 1px dotted #ccc;
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: bold;
+	color: #444
+}
+.headline .right .titles li a:hover {color: #000}
+
+.headline .hl-page {margin-top: 10px; margin-left: 10px}
+.headline .hl-page a {display: block; float: left; font-weight: bold}
+.headline .hl-page a.on {
+	background: url(images/headline/p-1.png) no-repeat;
+	width: 22px;
+	height: 18px;
+	overflow: hidden;
+	padding-top: 3px;
+	text-align: center;
+	color: #000;
+	margin-right: 4px
+}
+.headline .hl-page a.off {
+	background: url(images/headline/p-2.png) no-repeat;
+	width: 22px;
+	height: 18px;
+	overflow: hidden;
+	padding-top: 3px;
+	text-align: center;
+	color: #fff;
+	margin-right: 4px
+	
+}
+.headline .hl-page a.off:hover {background: url(images/headline/p-1.png) no-repeat; color: #000}
+.headline .hl-page a.rss {background: url(images/headline/rss.png) no-repeat; width: 21px; height: 21px; margin-left: 15px}
+*/
+.feedback {
+	background: url(images/headline/feedback-bg.png) no-repeat;
+	width: 300px;
+	height: 330px;
+	margin: 0 0 10px 0;
+	overflow: hidden;
+}
+.feedback .f-content {width: 250px; margin: auto}
+.feedback .f-top {float: right; width: 180px; padding: 4px 0 0 0; margin: 0 0 10px 0}
+.feedback .f-top h2 {margin: 0 0 4px 0; font-family: "Trebuchet MS"; font-size: 16px; color: #CC0000}
+.feedback .f-top h3 {font-family: Tahoma; font-size: 11px; font-weight: normal; color: #333}
+.feedback .line {border-bottom: 1px dotted #999; height: 2px; margin: 0 0 7px 0}
+.feedback .items {width: 252px; overflow: hidden}
+.feedback .item {width: 240px; height: 53px; overflow: hidden; padding: 5px; margin: 0 0 5px 0; background-color: #fff; border: 1px solid #ddd}
+.feedback .item .title {margin: 0 0 4px 0; font-family: "Trebuchet MS"; font-size: 12px; font-weight: bold;}
+.feedback .item .title a {color: #cc0000}
+.feedback .item .spot {line-height: 16px; color: #000}
+.feedback .item .spot a {color: #000}
+.feedback .f-bottom .all {float: left; background: url(images/arrow.gif) 0 5px no-repeat; margin: 5px 0 0 0; padding: 0 0 0 15px}
+.feedback .f-bottom .all a {color: #18537A; text-decoration: underline}
+.feedback .f-bottom .all a:hover {color: #18537A; text-decoration: none}
+.feedback .f-bottom .btn {float: right}
+
+.rBanner1 {
+	width: 300px;
+	height: 250px;
+	overflow: hidden;
+	margin-bottom: 10px
+}
+.rBanner2 {
+	width: 300px;
+	height: 250px;
+	overflow: hidden;
+	margin-bottom: 10px
+}
+
+.ad_900x90 {width: 900px; height: 90px; margin-bottom: 10px}
+
+
+.boxNews_1Two {width: 375px}
+.boxNews_1Tree {width: 570px}
+.boxNews_1 {margin-bottom: 5px; padding: 0 0 10px 0; overflow: hidden}
+.boxNews_1 .item { float:left; width: 180px; padding: 0 0 0 15px}
+.boxNews_1 .first {padding: 0}
+.boxNews_1 .item .image {background: url(images/box_1_bg.gif) no-repeat; width: 170px; height: 129px; overflow: hidden; margin: 0 0 5px 0; padding: 5px}
+.boxNews_1 .item img {width: 170px; height: 129px}
+.boxNews_1 .item .category {margin : 0 0 2px 0; font-family: "Trebuchet MS"; font-size:12px; font-weight: normal; display: block}
+.boxNews_1 .item .category a { color: #CC0000; text-decoration: none}
+.boxNews_1 .item .category a:hover { color: #CC0000; text-decoration: underline }
+.boxNews_1 .item .titles {
+	display: block;
+	width: 180px;
+	height: 120px;
+	overflow: hidden;
+}
+.boxNews_1 .item .title {
+	width: 180px;
+	display: block;
+	margin : 0 0 2px 0;
+	font-family: "Trebuchet MS";
+	font-size:18px;
+	font-weight: bold
+}
+.boxNews_1 .item .title a { color: #134B97; text-decoration: none}
+.boxNews_1 .item .title a:hover { color: #134B97; text-decoration: underline}
+.boxNews_1 .item .spot {
+	display: block;
+	padding-bottom: 5px;
+	font-family: Verdana;
+	font-size: 11px;
+	line-height: 14px
+}
+.boxNews_1 .item .spot a { color: #333; text-decoration: none}
+.boxNews_1 .item .spot a:hover { color: #333; text-decoration: underline}
+.boxNews_1 .item .comment {
+	border-top: 1px dotted #ccc;
+	margin: 7px 0 0 0;
+	font-family: Tahoma;
+	font-size: 10px;
+	height: 11px;
+	background: url(images/hlm_icon.png) 0px -42px no-repeat;
+	padding: 2px 0 0 12px;
+	color: #787878;
+	display: block;
+}
+.boxNews_1 .item .comment .commentNum {color: #FF7300}
+
+.boxNews_2 {margin:0 0 5px 0; width: 570px}
+.boxNews_2 .item {width: 570px; height: 120px; overflow: hidden; padding: 10px 0 10px 0; border-bottom: 1px dotted #ccc;}
+.boxNews_2 .item .image {width: 147px; height: 110px; background: url(images/box_2_bg.gif) no-repeat; overflow: hidden; padding: 5px; float: left; margin-right: 10px}
+.boxNews_2 .item img { width: 147px; height: 110px}
+.boxNews_2 .item .shortContent {float: left; position: relative; width: 402px; height: 120px; overflow: hidden}
+
+.boxNews_2 .item .category {
+	margin : 0 0 5px 0;
+	font-family: "Trebuchet MS";
+	font-size:12px;
+	font-weight: normal;
+	display: block;
+}
+.boxNews_2 .item .category a { color: #CC0000; text-decoration: none}
+.boxNews_2 .item .category a:hover { color: #CC0000; text-decoration: underline }
+.boxNews_2 .item .title {
+	display: block;
+	width: 230px;
+	margin : 0 0 5px 0;
+	font-family: "Trebuchet MS";
+	font-size: 18px;
+	font-weight: bold;
+	clear: both;
+}
+.boxNews_2 .item .title a { color: #134B97; text-decoration: none }
+.boxNews_2 .item .title a:hover { color: #134B97; text-decoration: underline }
+.boxNews_2 .item .spot {
+	display: block;
+	width: 250px;
+	height: 42px;
+	overflow: hidden;
+	margin : 0 0 5px 0;
+	font-family: Verdana;
+	font-size:11px;
+	line-height: 14px
+}
+.boxNews_2 .item .spot a { color: #333; text-decoration: none}
+.boxNews_2 .item .spot a:hover { color: #333; text-decoration: underline}
+.boxNews_2 .item .comment {
+	position: absolute;
+	top: 100px;
+	left: 310px;
+	margin: 0 0 0 0;
+	font-family: Tahoma;
+	font-size: 10px;
+	height: 11px;
+	background: url(images/hlm_icon.png) 0px -44px no-repeat;
+	padding: 0 0 0 12px;
+	color: #787878;
+	display: block;
+	float: right
+}
+.boxNews_2 .item .comment .commentNum {color: #FF7300}
+
+.boxNews_3 {width: 570px; padding: 10px 0 0 0}
+.boxNews_3 .item {margin-bottom: 5px}
+.boxNews_3 .category {display: block; float: left; font-family: "Trebuchet MS"; font-size: 12px; font-weight: normal}
+.boxNews_3 .category a {color: #cc0000; text-decoration: none}
+.boxNews_3 .category a:hover {color: #cc0000; text-decoration: underline}
+.boxNews_3 .title {float: left; font-family: "Trebuchet MS"; font-size: 12px; font-weight: normal}
+.boxNews_3 .title a {color: #134B97; text-decoration: none}
+.boxNews_3 .title a:hover {color: #134B97; text-decoration: underline}
+.boxNews_3 .sep {display: block; float: left; margin: 0 5px 0 5px}
+.boxNews_3 .date {float: right; color: #666}
+
+.boxLine_1 {
+	width: 570px;
+	height: 10px;
+	margin-bottom: 15px;
+	border-bottom: 1px dotted #ccc;
+}
+
+.mostlyReaded { margin: 0 0 10px 0; width: 300px}
+.mostlyReaded .mr-title {background: url(images/r_mostread/bg-title.png) no-repeat; position: relative; width: 300px; height: 40px}
+.mostlyReaded .mr-title h2 {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+
+}
+.mostlyReaded .tabs {width: 300px; height: 23px; overflow: hidden}
+.mostlyReaded .tabs .item { float: left; display:inline }
+.mostlyReaded .tabs .big {
+	background: url(images/r_mostread/bg-menu-over.png) no-repeat;
+	width: 100px;
+	height: 18px;
+	margin: 2px 0 0 0;
+	padding: 5px 0 0 0;
+	font-family: "Trebuchet MS";
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	cursor: pointer
+}
+.mostlyReaded .tabs .small {
+	background: url(images/r_mostread/bg-menu.png) no-repeat;
+	width: 100px;
+	height: 18px;
+	margin: 2px 0 0 0;
+	padding: 5px 0 0 0;
+	font-family: "Trebuchet MS";
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	color: #000;
+	cursor: pointer
+}
+.mostlyReaded .content {
+	padding: 10px 10px 0 10px;
+	border: 5px solid #990000;
+	border-bottom: 0;
+}
+.mostlyReaded .cntItem li {
+	font-family: Tahoma;
+	font-size: 11px;
+	padding: 10px 0 10px 0;
+}
+.mostlyReaded .cntItem li.sep {
+	border-bottom: 1px solid #ddd;
+}
+.mostlyReaded .cntItem li .item {
+	float: left;
+	width: 200px;
+	height: 45px;
+	line-height: 15px;
+	overflow: hidden
+}
+.mostlyReaded .cntItem li span {display: block}
+.mostlyReaded .cntItem li .image {
+    float: left;
+    width: 64px;
+    height: 50px;
+    margin: 0 4px 0 0;
+    overflow: hidden
+}
+.mostlyReaded .cntItem li img {
+	width: 60px;
+	height: 46px;
+	border: 1px solid #C8CCCF;
+	padding: 1px
+}
+.mostlyReaded .cntItem li .title {font-family: "Trebuchet MS"; font-size: 12px; font-weight: bold}
+.mostlyReaded .cntItem li .title a {color: #CC0000}
+.mostlyReaded .cntItem li .spot a {color: #444}
+.mostlyReaded .item-content {
+    height: 50px;
+    overflow: hidden;
+}
+
+.mostlyReaded .mrPage {margin-top: 5px; padding-bottom: 10px}
+.mostlyReaded .mrPage a {display: block; float: left; font-weight: bold}
+.mostlyReaded .mrPage a.on {
+	background: url(images/p-1.png) no-repeat;
+	width: 20px;
+	height: 17px;
+	overflow: hidden;
+	padding-top: 2px;
+	text-align: center;
+	color: #fff;
+	margin-right: 3px
+}
+.mostlyReaded .mrPage a.off {
+	background: url(images/p-2.png) no-repeat;
+	width: 20px;
+	height: 17px;
+	overflow: hidden;
+	padding-top: 2px;
+	text-align: center;
+	color: #000;
+	margin-right: 3px
+
+}
+.mostlyReaded .mrPage a.off:hover {background: url(images/p-1.png) no-repeat; color: #fff}
+
+.mostlyReaded .content-bottom {
+	background: url(images/r_mostread/bottom.png) bottom no-repeat;
+	height: 20px;
+}
+
+.g-slide {width: 570px; height: 110px}
+.g-slide .jSlider {width: 570px; height: 110px; position: relative; background: url(images/g_slide/logo.png) left no-repeat}
+.g-slide .jSlider div.content {position: relative; top: 0px; width: 550px; height: 110px}
+.g-slide .jSlider div.content div.prev {position: absolute; top: 0; left: 120px; width: 30px; height: 110px; cursor: pointer}
+.g-slide .jSlider div.content div.next{position: absolute; top: 0; left: 540px; width: 30px; height: 110px; cursor: pointer}
+.g-slide .jSlider div.content .jSlider_news {position: absolute; top: 0; left: 150px; width: 390px; height: 110px;  background: url(images/g_slide/bg.png) left no-repeat; overflow: hidden}
+.g-slide .jSlider div.content .jSlider_news div.items {position: absolute; top: 10px; left: 5px; height: 95px}
+.g-slide .jSlider div.content .jSlider_news div.items div.item {float: left; padding: 0 10px 0 0}
+.g-slide .jSlider .item img {width: 116px; height: 86px; border: 2px solid #fff}
+
+.gallery {
+	background: url(images/gallery/bg.png) no-repeat;
+	width: 300px;
+	height: 273px;
+	margin-bottom: 15px;
+	overflow: hidden
+}
+.gallery h2 {
+	padding: 8px 0 0 10px;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 7px
+}
+.gallery h2 a {color: #fff}
+.gallery .content {width: 300px; overflow: hidden; padding: 5px 0 0 6px}
+.gallery .content .item {
+	float: left;
+	background: url(images/gallery/img_bg.png) no-repeat;
+	width: 82px;
+	height: 62px;
+	padding: 3px;
+	margin: 4px 4px 4px 4px
+}
+.gallery .content .item img {width: 82px; height: 62px}
+
+
+.video {
+	background: url(images/gallery/bg.png) no-repeat;
+	width: 300px;
+	height: 273px;
+	margin-bottom: 15px;
+	overflow: hidden
+}
+.video h2 {
+	padding: 8px 0 0 10px;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 7px
+}
+.video h2 a {color: #fff}
+.video .content {width: 300px; overflow: hidden; padding: 5px 0 0 6px}
+.video .content .item {
+	float: left;
+	background: url(images/gallery/img_bg.png) no-repeat;
+	width: 82px;
+	height: 62px;
+	padding: 3px;
+	margin: 4px;
+	position: relative
+}
+.video .content .item img {width: 82px; height: 62px}
+.video .content .item .image {position: absolute; top:20px; left:30px; width: 30px; height: 30px; background: transparent url(images/gallery/play.png) no-repeat}
+.video .content .item .image a {display:block; width: 30px; height: 30px;}
+
+.ihaber {width: 300px; height: 600px; margin: 0 0 15px 0}
+.ihaber .ihaber_frame {float: left; width: 176px}
+.ihaber .ad_120x600 {float: right; width: 120px; height: 600px}
+
+.feature {
+	background: url(images/feature/bg.png) no-repeat;
+	width: 300px;
+	height: 220px;
+	overflow: hidden;
+	margin-bottom: 15px
+}
+.feature .f-title {font-family: Tahoma; font-size: 12px; font-weight: bold; margin: 150px 0 22px 10px}
+.feature .f-title a {color: #fff}
+.feature .title {
+	margin-left: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px
+}
+.feature .title a {color: #fff}
+
+
+.localSpor {
+	background: url(images/spor/bg.png) no-repeat;
+	width: 300px;
+	height: 239px;
+	margin: 0 0 10px 0;
+	overflow: hidden
+}
+.localSpor h2 {
+	padding: 7px 0 0 10px;
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: 700;
+	margin-bottom: 7px
+}
+.localSpor h2 a {color: #fff}
+.localSpor .content {padding: 10px 10px 3px 10px}
+.localSpor .content .item {height: 50px; overflow: hidden}
+.localSpor .content .isep {margin-bottom: 10px}
+.localSpor .content .image {
+	float: left;
+	background: url(images/spor/img_bg.png) no-repeat;
+	width: 61px;
+	height: 46px;
+	padding: 2px;
+	margin-right: 5px
+}
+.localSpor .content img {width: 61px; height: 46px}
+.localSpor .sort-content span {display: block}
+.localSpor .sort-content {float: left; width: 200px; height: 46px; overflow: hidden}
+.localSpor .sort-content .title {font-family: "Trebuchet MS"; font-size: 12px; font-weight: bold; line-height: 16px}
+.localSpor .sort-content .title a {color: #334B0E}
+.localSpor .sort-content .spot {line-height: 15px}
+.localSpor .sort-content .spot a {color: #666;}
+
+.localSpor .ys-page {float: right; margin-top: 2px; margin-right: 10px}
+.localSpor .ys-page a {display: block; float: left; font-weight: bold}
+.localSpor .ys-page a.on {
+	background: url(images/spor/p-2.gif) no-repeat;
+	width: 21px;
+	height: 17px;
+	overflow: hidden;
+	padding-top: 4px;
+	text-align: center;
+	color: #000;
+	margin-right: 4px
+}
+.localSpor .ys-page a.off {
+	background: url(images/spor/p-1.gif) no-repeat;
+	width: 21px;
+	height: 17px;
+	overflow: hidden;
+	padding-top: 4px;
+	text-align: center;
+	color: #fff;
+	margin-right: 4px
+	
+}
+.localSpor .ys-page a.off:hover {background: url(images/spor/p-2.gif) no-repeat; color: #000}
+
+/* Sağ Ekonomi */
+.localEconomy {
+	background: url(images/economy/bg.png) no-repeat;
+	width: 300px;
+	height: 239px;
+	overflow: hidden;
+	margin: 0 0 10px 0;
+}
+.localEconomy h2 {
+	padding: 7px 0 0 10px;
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: 700;
+	margin-bottom: 7px
+}
+.localEconomy h2 a {color: #fff}
+.localEconomy .content {padding: 10px 10px 3px 10px}
+.localEconomy .content .item {height: 50px; overflow: hidden}
+.localEconomy .content .isep {margin-bottom: 10px}
+.localEconomy .content .image {
+	float: left;
+	background: url(images/economy/img_bg.png) no-repeat;
+	width: 61px;
+	height: 46px;
+	padding: 2px;
+	margin-right: 5px
+}
+.localEconomy .content img {width: 61px; height: 46px}
+.localEconomy .sort-content span {display: block}
+.localEconomy .sort-content {float: left; width: 200px; height: 46px; overflow: hidden}
+.localEconomy .sort-content .title {font-family: "Trebuchet MS"; font-size: 12px; font-weight: bold; line-height: 16px}
+.localEconomy .sort-content .title a {color: #0D2C4D}
+.localEconomy .sort-content .spot {line-height: 15px}
+.localEconomy .sort-content .spot a {color: #175191;}
+
+
+/* Sağ Öne Çıkanlar */
+.localHightlights {
+	background: url(images/highlights/bg.png) no-repeat;
+	width: 300px;
+	height: 343px;
+	overflow: hidden;
+	margin: 0 0 10px 0;
+}
+.localHightlights h2 {
+	padding: 7px 0 0 10px;
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: 700;
+	margin-bottom: 7px;
+	color: #fff
+}
+.localHightlights .content {padding: 10px 10px 3px 10px}
+.localHightlights .content .item {height: 50px; overflow: hidden}
+.localHightlights .content .isep {margin-bottom: 10px}
+.localHightlights .content .image {
+	float: left;
+	background: url(images/economy/img_bg.png) no-repeat;
+	width: 61px;
+	height: 46px;
+	padding: 2px;
+	margin-right: 5px
+}
+.localHightlights .content img {width: 61px; height: 46px}
+.localHightlights .sort-content span {display: block}
+.localHightlights .sort-content {float: left; width: 200px; height: 46px; overflow: hidden}
+.localHightlights .sort-content .title {font-family: "Trebuchet MS"; font-size: 12px; font-weight: bold; line-height: 16px}
+.localHightlights .sort-content .title a {color: #cc0000}
+.localHightlights .sort-content .spot {line-height: 15px}
+.localHightlights .sort-content .spot a {color: #444;}
+
+.nav {margin-bottom: 5px}
+.nav a {color: #827D8A}
+.nav a:hover {color: #000; text-decoration: none}
+.nav span {color: #827D8A}
+
+h1.btitle {
+	display: block;
+	color: #004080;
+	font-weight: normal;
+	letter-spacing: 0.5px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+}
+
+.all-cities {background-color: #fff;}
+
+.privacy {font-family: Verdana; font-size: 12px; line-height: 16px}
+
+
+.staff a {color: #000; text-decoration: none}
+
+.siteMap { background: url(images/sitemap-bg.png) repeat-x; height: 220px}
+.siteMap .siteMapTitle {font-weight: bold; margin-left: 25px; padding-top: 5px}
+.siteMap .siteMapTitle a {display: block; float: left; width: 140px; color: #fff}
+.siteMap .items {width: 840px; margin-left: 25px; margin-top: 10px}
+.siteMap .items .item {float: left; width: 140px; font-family: Tahoma}
+.siteMap .items .item li {padding: 2px 0 2px 0}
+.siteMap .items .item a {color: #000}
+
+.fInfo {background: url(images/footer/bg-pt.png) no-repeat; width: 890px; height: 95px; padding: 15px 0 0 10px; color: #000}
+.fInfo a {color: #000}
+.fInfo .info {float: left; margin-right: 100px}
+.fInfo .infoMenu {font-weight: bold; margin-bottom: 10px}
+.fInfo .infoMenu a {margin-right: 5px}
+.fInfo .copyright {}
+.fInfo .copyright span {display: block; margin: 4px 0 4px 0}
+
+.fInfo .ajans {float: left; width: 250px; margin-right: 15px}
+.fInfo .ajans span {display: block; margin: 0 0 8px 0}
+
+.fInfo .networks {float: left}
+.fInfo .networks .application {position: relative}
+.fInfo .networks .application span {display: block}
+.fInfo .networks .application .software {margin-bottom: 5px}
+.fInfo .networks .application .design {padding-right: 15px; text-align: center}
+.fInfo .networks .application .netteBtn {position: absolute; width: 100px; height: 24px; top: 40px; left: 400px}
+.fInfo .networks .application .netteBtn a img {width: 100px; height: 24px}
+
+.popupHeader {
+	background: url(images/haberciler-popup.png) no-repeat;
+	width: 100%;
+	height: 150px;
+	position: relative;
+}
+.popupHeader .popupLogo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 180px;
+	height: 80px
+}
+.popupHeader .popupMenu {
+	position: absolute;
+	top: 10px;
+	left: 220px;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+.popupHeader .popupMenu a {color: white; margin-right: 20px}
+.popupHeader .popupBanner {
+	position: absolute;
+	top: 50px;
+	left: 180px;
+}
+.popupCity {
+	position: absolute;
+	width: 140px;
+	top: 100px;
+	left: 0;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 18px
+}
+.popupCity a {color: white}
+
+
+.detailBar {
+	background: url(images/db-bg.png) top no-repeat;
+	width: 580px;
+	height: 23px;
+	margin: 0 0 10px 0;
+	overflow: hidden;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+.detailBar .item {position: absolute; height: 32px; font-family: Tahoma; font-size: 10px; color: #666}
+.detailBar .item a, a:hover {color: #666}
+.detailBar .db-2 {left: 6px; top: 5px}
+.detailBar .db-3 {left: 100px; top: 5px}
+.detailBar .db-4 {left: 420px; top: 5px}
+.detailBar .db-5 {left: 510px; top:0; width: 34px; height: 20px; cursor: pointer}
+.detailBar .db-6 {left: 544px; top:0; width: 34px; height: 20px; cursor: pointer}
+
+.newsDetailPagination {
+	margin: 30px 0 20px 0;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #000;
+	height: 15px;
+}
+.newsDetailPagination span {margin: 0 5px 0 5px}
+.newsDetailPagination span.number {font-style: italic}
+
+.newsDetail {width: 570px; margin: 0 0 0 0}
+.newsDetail .boxLine_1 {
+	width: 570px;
+	height: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+}
+.newsDetail .left {float: left; width: 270px; margin: 0 10px 0 0}
+.newsDetail .left .image {width: 260px; height: 198px; padding: 5px; background: url(images/detail_img_bg.gif) no-repeat;}
+.newsDetail .left .image img {width: 260px; height: 198px}
+.newsDetail .left .wimage {text-align: center}
+.newsDetail .left .wimage img {width: 110px; height: 132px}
+.newsDetail .left .wimage .img {display: block}
+.newsDetail .left .wimage .profile {display: block}
+.newsDetail .left .wimage .name {font-size: 18px; font-weight: bold;  display: block}
+.newsDetail .left .wimage .email {display: block}
+
+.newsDetail .left .properties {margin: 5px 0 0 0}
+.newsDetail .left .properties h2 {
+	background: url(images/listNews_bg.png) no-repeat;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #134408;
+	padding: 9px 0 0 5px;
+	width: 235px;
+	height: 19px;
+}
+.newsDetail .left .properties .item {
+	background-color: #fbfbfb;
+	border: 1px dotted #ddd;
+	margin:  2px 0 2px 0;
+	font-size: 10px;
+	font-weight: bold
+}
+.newsDetail .left .properties .item a {
+	display: block;
+	padding: 5px;
+	color: black;
+	text-decoration: none
+}
+.newsDetail .left .properties .item a:hover {
+	color: black;
+	text-decoration: underline
+}
+
+.newsDetail .title {
+	display: block;
+	font-family: "Trebuchet MS";
+	font-size: 21px;
+	font-weight: bold;
+	color: #CC0000;
+	margin: 0 0 5px 0;
+}
+.newsDetail .spot {
+	display: block;
+	font-family: "Trebuchet MS";
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #444
+}
+.newsDetail .date {display: block; margin: 0 0 5px 0; color: #999; font-size: 11px; font-weight: normal}
+.newsDetail .content {
+	font-family: Verdana;
+	font-size: 14px;
+	line-height: 150%;
+	color: #000;
+}
+.newsDetail .content p {margin: 0 0 20px 0}
+.newsDetail .content a {color: red}
+.newsDetail .listNews {width: 270px; height: 375px; overflow: hidden; background: url(images/detail_last_min_bg.png) no-repeat}
+.newsDetail .listNews .allPost {
+	font-family: Arial;
+	font-size: 11px;
+	font-weight:bold;
+	text-align: right;
+	margin: 5px 0 0 0
+}
+.newsDetail .listNews .allPost a {
+	color: #FF3D00;
+	text-decoration: none
+}
+.newsDetail .listNews .allPost a:hover {
+	color: #FF3D00;
+	text-decoration: underline
+}
+.newsDetail .listNews .items {padding: 5px 10px 5px 10px; margin-top: 25px}
+.newsDetail .listNews .item {
+	font-family: Tahoma;
+	font-size: 11px;
+	border-bottom: 1px solid #DBE2D4
+}
+.newsDetail .listNews .item .lndate {font-size: 11px; color: #CC0000; margin-right: 5px}
+.newsDetail .listNews .item a {display: block; color: #000; text-decoration: none; padding: 4px 0 4px 0}
+.newsDetail .listNews .item a:hover {color: #CC0000; text-decoration: none; background-color: #fff}
+.ndUp {
+	background: url(images/nd_up_bg.png) repeat-x;
+	width: 525px;
+	height: 28px;
+	margin: 5px auto;
+	padding: 0 5px 0 5px;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+.ndUp span {display: block;float: left;margin: 8px 0 0 0}
+.ndUp .up {float: right}
+.lbanner {text-align:center; margin: 10px 0 10px 0}
+.viewCount {
+	width: 560px;
+	height: 19px;
+	background: url(images/h-title-bg.png) no-repeat;
+	margin: 10px 0 1px 0;
+	padding: 4px 0 0 10px;
+	font-family:  Tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	color: #444
+}
+
+.detailMostRead {width: 570px; padding-top: 20px}
+.detailMostRead .dmrTitle {
+	background: url(images/detail_mostread.png) no-repeat;
+	height: 23px;
+	padding: 2px 0 0 35px;
+	margin-bottom: 10px;
+	font-family: "Trebuchet MS";
+	font-size: 15px;
+	color: #444;
+}
+
+.detailGallery {width: 570px; padding-top: 20px}
+.detailGallery .dgTitle {
+	background: url(images/detail_gallery.png) no-repeat;
+	height: 23px;
+	padding: 2px 0 0 35px;
+	margin-bottom: 10px;
+	font-family: "Trebuchet MS";
+	font-size: 15px;
+	color: #444;
+}
+
+.detailVideo {width: 570px; padding-top: 20px}
+.detailVideo .dvTitle {
+	background: url(images/detail_video.png) no-repeat;
+	height: 21px;
+	padding: 4px 0 0 35px;
+	margin-bottom: 10px;
+	font-family: Arial;
+	font-size: 15px;
+	color: #444;
+}
+
+.historyBar {
+	border-top: 1px dotted #ccc;
+	margin: 15px 0 10px 0;
+	padding: 10px 0 0 0;
+}
+.historyBar .bottom {
+	border-top: 1px dotted #ccc;
+	margin: 10px 0 0 0;
+	height: 20px
+}
+
+.cloud {padding: 10px 0 0px 0; width: 565px}
+.cloud .labels {
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #ccc;
+}
+
+.sharing {width: 565px; margin: 0 0 15px 0; padding: 20px 0 10px 0}
+.sharing .title {float: left; margin: 4px 4px 0 4px; font-family: Tahoma; font-size: 12px; font-weight: bold; color: #333}
+.sharing .sites {float: left; margin-top: 1px}
+.sharing .sites li {display: inline; margin: 0 2px 0 2px}
+
+.lpagination {
+	width: 580px;
+	height: 20px;
+}
+.lpagination .pitem {
+	display: inline-block;
+	font-family: Tahoma;
+	font-size: 12px;
+
+}
+
+.lpagination .active {
+	background: url(images/p-2.png) no-repeat;
+	width: 20px;
+	height: 16px;
+	padding-top: 3px;
+	margin-right: 5px;
+	font-family: Arial;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	color: #000
+}
+.lpagination .deactive {width: 20px; height: 19px; margin-right: 5px;}
+.lpagination .deactive {
+	background: url(images/p-1.png) no-repeat;
+	display: inline-block;
+	width: 20px;
+	height: 16px;
+	padding-top: 3px;
+	font-family: Arial;
+	font-size: 11px;
+	text-align: center;
+	color: #fff;
+}
+.lpagination .deactive:hover {background: url(images/p-2.png) no-repeat; color: #000; text-decoration: none}
+
+.grelated {margin: 5px 0 5px 0}
+.vrelated {margin: 5px 0 5px 0}
+
+.nrelated {width:170px; overflow: hidden; margin: 0 20px 15px 0}
+.nrelated .rdTitle {background: url(images/nrelated-bg.png) repeat-x; padding: 4px 0 4px 4px; margin: 0 0 5px 0; border-bottom: 1px solid #ddd; font-family: "Trebuchet MS"; font-weight: bold}
+.nrelated .item {margin: 0 0 5px 0; padding: 0 0 5px 0; border-bottom: 1px dotted #ccc}
+.nrelated img {width: 170px; height: 129px; margin: 0 0 5px 0}
+.nrelated h1 {font-family: "Trebuchet MS"; font-size:12px; font-weight: bold; width: 150px}
+.nrelated h1 a {color: #134B97; text-decoration: none}
+.nrelated h1 a:hover {color: #134B97; text-decoration: underline}
+.nrelated h2 {margin : 0 0 2px 0; font-family: "Trebuchet MS"; font-size:11px; font-weight: bold; display: block}
+.nrelated h2 a { color: #CC0000; text-decoration: none}
+.nrelated h2 a:hover { color: #CC0000; text-decoration: underline}
+
+/* En çok izlenen galeriler */
+
+.topGallery {margin-bottom: 10px}
+.topGallery .tg-title {
+	background: url(images/gallery/gp-title.png) no-repeat;
+	width: 300px;
+	height: 30px;
+	position: relative
+}
+.topGallery .tg-title .title {
+	position: absolute;
+	top: 10px;
+	left: 30px
+}
+.topGallery .tg-title .all {
+	width: 75px;
+	height: 27px;
+	position: absolute;
+	top: 2px;
+	left: 225px
+}
+.topGallery .tg-title .all a {display: block; height: 27px}
+
+.topGallery .tv-title {
+	background: url(images/video/vp-title.png) no-repeat;
+	width: 300px;
+	height: 30px;
+	position: relative
+}
+.topGallery .tv-title .title {
+	position: absolute;
+	top: 10px;
+	left: 30px
+}
+.topGallery .tv-title .all {
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	top: 2px;
+	left: 150px
+}
+.topGallery .tv-title .all a {display: block; height: 27px}
+
+
+.topGallery .tgList {background-color: #ebebeb; padding: 10px; height: 460px; overflow: hidden}
+.topGallery .tgList a {color: #E20917}
+.topGallery .tgList .item {border-bottom: 1px dotted #c8c8c8; height: 76px; margin: 0 0 10px 0; padding: 0 0 10px 0}
+.topGallery .tgList .item img {width: 94px; height: 70px}
+.topGallery .tgList .item span {display: block; margin-bottom: 5px}
+.topGallery .tgList .item .image {float: left; padding: 3px; margin-right: 5px; background: url(images/gallery/img-bg.png) no-repeat;}
+.topGallery .tgList .item .titles {float: left; width: 150px}
+.topGallery .tgList .item .title {font-family: "Trebuchet MS"; font-weight: bold}
+.topGallery .tgList .item .date {color: #134B97}
+.topGallery .tgList .item .readCount {color: #134B97;}
+.topGallery .tgBottom {
+	background: url(images/gallery/tglist-bottom.png) no-repeat;
+	height: 25px;
+}
+
+.gheadline {
+	width: 572px;
+	height: 380px;
+	overflow: hidden;
+	padding: 10px 0 0 0;
+	position: relative;
+	margin: 0 0 10px 0;
+}
+.gheadline .hlbar {
+	position: absolute;
+	top: 300px;
+	width: 572px;
+	height: 80px;
+	background: url(images/gallery/hl-bg.png) no-repeat;
+	z-index: 9999;
+}
+.gheadline .hltitle {
+	position: absolute;
+	top: 320px;
+	width: 300px;
+	height: 30px;
+	margin: 0 0 10px 30px;
+	font-family: verdana;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 25px;
+	color: #fff;
+	z-index: 99999;
+}
+.gheadline .hltitle a {color: #fff}
+.gheadline .hlslide {
+	position: absolute;
+	width: 230px;
+	height: 50px;
+	top: 320px;
+	left: 338px;
+	z-index: 99999;
+}
+.gheadline .hlimage {width: 565px; overflow:hidden; margin: auto; text-align: center}
+.gheadline .hlimage img {width: 565px; height: 380px; margin: 0 0 0 3px}
+.gheadline .spot {
+	margin-top: 10px;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff
+}
+.gheadline .jSlider {width: 230px; height: 50px; clear: both; position: relative}
+.gheadline .jSlider div.content {position: relative; top: 0px; width: 230px; height: 50px}
+.gheadline .jSlider div.content div.prev {position: absolute; top: 0px; left: 0; width: 10px; height: 50px; cursor: pointer}
+.gheadline .jSlider div.content div.next{position: absolute; top: 0px; left: 220px; width: 10px; height: 50px; cursor: pointer}
+.gheadline .jSlider .content .jSlider_news .items .title {position: absolute; top: 0px; width: 70px; height: 53px}
+.gheadline .jSlider div.content .jSlider_news {position: absolute; top: 0; left: 15px; width: 200px; height: 53px; overflow: hidden}
+.gheadline .jSlider div.content .jSlider_news div.items {position: absolute; left: 0px; height: 135px}
+.gheadline .jSlider div.content .jSlider_news div.items div.item {float: left; padding: 0 10px 0 0}
+.gheadline .jSlider .item img {width: 56px; height: 46px; border: 2px solid #fff}
+
+.gdetail {
+	background: #E20917 url(images/gallery/gd-bg.png) no-repeat;
+	width: 565px;
+	overflow: hidden;
+	padding: 10px 0 0 0
+}
+.gdetail .title {
+	height: 30px;
+	margin: 0 0 10px 0;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff
+}
+.gdetail .title a {color: #fff}
+.gdetail .hlimage {width: 479px; overflow:hidden; margin: auto; text-align: center}
+.gdetail .hlimage img {border: 5px solid #fff; margin: 0 0 10px 0}
+.gdetail .gd-spot {
+	background-color: #E20917;
+	margin: 0 0 10px 0;
+	padding: 0 10px 0 10px;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff
+}
+.gdetail .gd-bottom {background: url(images/gallery/gd-bottom.png) no-repeat; height: 5px}
+.gdetail .gd-pag {background: url(images/gallery/gd-pag.png) no-repeat; height: 48px; padding: 10px 10px 0 10px}
+
+.gSearch {
+	position: relative;
+	width: 300px;
+	height: 35px;
+	overflow: hidden;
+	margin: 0 0 15px 0;
+	background: url(images/gallery/g_search.png) no-repeat;
+}
+.gSearch .gInput {position: absolute; top: 8px; left: 35px;}
+.gSearch .gInput input {border: 0px; width: 200px; padding: 4px; font-family: Verdana; font-size: 9pt; color: #666; background-color: transparent}
+.gSearch .gButton {position: absolute; top: 0px; left: 250px; width: 50px; height: 35px; cursor: pointer}
+
+.gList {
+	width: 572px;
+	padding: 10px 0 0 0;
+	margin: 0 0 10px 0
+}
+.gList .gl-middle {
+	width: 575px;
+	padding: 0 0 0 0
+}
+.gList .gl-middle .item {
+	background: url(images/gallery/gl-item.png) no-repeat;
+	float: left;
+	width: 155px;
+	height: 142px;
+	padding: 10px;
+	margin: 0 0 10px 0px;
+	text-align: center
+}
+.gList .gl-middle .space {margin: 0 24px 0 24px}
+.gList .gl-middle .item a {color: #cc0000; font-weight: bold}
+.gList .gl-middle .item .image {width: 155px; height: 100px; overflow: hidden}
+.gList .gl-middle .item .image img {width: 153px; height: 98px}
+.gList .gl-middle .item span {display: block; width: 153px; height: 29px; margin: 0 0 7px 0 ; overflow: hidden; font-size: 12px}
+.gList .gl-middle .item .play-btn {width: 75px; height: 17px; margin: auto}
+.gList .gl-middle .item .title {font-family: "Trebuchet MS"; padding: 5px 0 0 0; line-height: 14px}
+
+.gList .bottom {
+	background: url(images/gallery/middle-bottom.png) no-repeat;
+	width: 885px;
+	height: 15px;
+	overflow: hidden;
+	font-size:0px
+}
+.glPagination {
+	margin: 4px 0 0 0;
+	width: 450px;
+	height: 25px;
+	overflow: hidden
+}
+.gpagination {
+	width: 450px;
+	height: 20px;
+}
+.gpagination .pitem {
+	display: inline-block;
+	font-family: Tahoma;
+	font-size: 12px;
+
+}
+
+.gpagination .active {
+	width: 24px;
+	background-color: #fff;
+	border: 1px solid #D6DBE2;
+	padding: 2px 0 2px 0;
+	margin: 0 5px 0 0;
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	color: #E20917
+}
+.gpagination .deactive {
+	width: 24px;
+	display: inline-block;
+	border: 1px solid #EBF1F8;
+	padding: 2px 0 2px 0;
+	margin: 0 5px 0 0;
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	color: #0A3786;
+}
+.gpagination .deactive:hover {background-color: #fff; border: 1px solid #D6DBE2; color: #E20917}
+
+.gdetail .glPagination {
+	margin: 4px 0 0 30px;
+	width: 450px;
+	height: 25px;
+	overflow: hidden
+}
+
+/* video detay */
+
+.vheadline {
+	background: #0A3685 url(images/video/vd-bg.png) no-repeat;
+	width: 565px;
+	overflow: hidden;
+	padding: 10px 0 0 0
+}
+.vheadline .title {
+	height: 30px;
+	margin: 0 0 10px 0;
+	text-align: center;
+	font-family: "Trebuchet MS";
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff
+}
+.vheadline .hlimage {width: 545px; overflow:hidden; margin: auto; text-align: center}
+.vheadline .spot {
+	background-color: #0A3685;
+	margin: 10px 0 10px 0;
+	padding: 0 10px 0 10px;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff
+}
+.vheadline .v-bottom {background: url(images/video/vd-bottom.png) no-repeat; height: 5px}
+
+.contact {}
+.contact table {width: 570px; margin: 0 0 10px 0}
+.contact table td {padding: 4px; font-family: "Trebuchet MS"; font-size: 12px}
+.contact table td.label {font-weight: bold}
+.contact .red {color: red}
+.contact .mailto a {color: blue; font-weight: bold}
+
+h1.pageTitle {
+	display: block;
+	background: url(images/h-title-bg.png) no-repeat;
+	height: 19px;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 4px 0 0 10px;
+	margin: 0 0 10px 0;
+	color: #3A71AF;
+}
+
+.left .input {padding: 4px; font-family: Tahoma; font-size: 11px; background-color: #fbfbfb; border: 1px solid #bbb}
+.left .secInput {width: 115px; font-weight: bold; letter-spacing: 4px}
+.left .inputSize100 {width: 100px}
+.left .inputSize200 {width: 200px}
+.left .inputSize250 {width: 250px}
+
+.left .select {padding: 2px; font-family: Tahoma; font-size: 11px; background-color: #fbfbfb; border: 1px solid #bbb}
+.left .select option {padding: 2px; background-color: #fbfbfb}
+.left .selectSize200 {width: 210px}
+
+.left .textarea {padding: 4px; font-family: Tahoma; font-size: 11px; background-color: #fbfbfb; border: 1px solid #bbb}
+.left .textareaSize300 {width: 300px; height: 100px}
+.left .textareaSize350 {width: 350px; height: 100px}
+
+.left .submit {padding: 2px; font-family: Trebuchet MS; font-size: 12px; font-weight:bold; cursor: pointer}
+
+.fbList {}
+.fbList a {color: #000}
+
+.fbList .items {padding: 5px}
+.fbList .items .item {margin: 0 0 10px 0;}
+.fbList h3 {margin: 0 0 10px 0}
+.fbList .date {margin: 0 0 10px 0; color: #666}
+.fbList .feedbackDetail {margin: 0 0 10px 0; font-family: Verdana; font-size: 12px; line-height: 18px}
+.fbList .city {font-size: 10px; color: #cc0000}
+.fbList .name {color: #cc0000}
+
+.fbForm .desc {color: #cc0000}
+.fbForm td.desc {padding: 10px 6px 10px 6px; background-color: #f1f1f1}
+
+.loss {margin: 0 0 10px 0}
+.loss .middle {background-color: #F0F4F4; padding: 10px}
+.loss .items {padding:0; margin:0}
+.loss .items .line {border-top: 1px dotted #ccc; margin: 10px 0 0 0; padding: 0 0 10px 0; font-size: 0}
+.loss .items .image {background: url(images/loss/img-bg.gif) no-repeat; width: 64px; height:74px; padding: 3px; margin: 0 10px 0 0; overflow: hidden}
+.loss .items .image img {width: 58px; height: 75px}
+.loss .items .scontent {width: 175px}
+.loss .items .scontent h4 {margin: 0 0 5px 0}
+.loss .items .scontent h4 a {color: #CC0000}
+.loss .items .scontent p {color: #484949; line-height: 16px}
+
+.loss .ll-item .image {background: url(images/loss/img-2-bg.gif) no-repeat; width: 42px; height: 54px; padding: 3px; margin: 0 4px 0 4px; overflow: hidden}
+.loss .ll-item img {width: 42px; height: 54px}
+
+.lossList {font-family: Verdana; font-size: 12px; margin: 0 0 10px 0}
+.lossList table {width: 100%}
+.lossList td {padding: 6px; color: #444; border-bottom: 1px solid #eee}
+.lossList td.label {width: 25%; font-weight: bold; color: #000}
+.lossList td.desc {line-height: 18px}
+
+.lsList {}
+.lsList .item {float: left; width: 110px; height: 175px; padding: 5px; border: 1px solid #ccc; margin: 10px}
+.lsList .item .image {margin: 0 0 5px 0}
+.lsList .item img {width: 110px}
+.lsList .item .name {font-size: 10px; font-weight: bold; background-color: #f1f1f1; padding: 2px; text-align: center; height: 24px}
+.lsList .item a {color: black}
+
+.loss-send {font-family: Verdana; font-size: 14px;}
+.loss-send a {color: #cc0000}
+
+.adInfo span {display: block; margin: 0 0 10px 0}
+
+#imgPreviewWithStyles {
+    background: #fbfbfb;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 15px;
+    z-index: 999;
+    border: 2px solid #cc0000;
+}
+
+/* Text below image */
+#imgPreviewWithStyles span {
+	font-weight: bold;
+    color: #cc0000;
+    text-align: center;
+    display: block;
+    padding: 10px 0 3px 0;
+}
+
+#ndImages {
+	width: 565px;
+	margin: 10px 0 0 0;
+	padding: 0 0 10px 0;
+	position: relative;
+}
+#ndImages .ndImg {
+	border: 1px solid #ccc;
+	padding: 3px;
+	width: 562px;
+	text-align: center
+}
+
+#ndImages .ndBottom {
+	width: 568px;
+	height: 31px;
+	overflow: hidden;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: url(images/nd_slide/ndImageBg.png) repeat-x;
+}
+
+#ndImages .ndTitle {
+	font-family: Arial;
+	font-size: 11px;
+	font-weight: bold;
+}
+#ndImages .ndPg {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0 10px 0 10px
+}
+
+.headlines {
+	background: url(images/headline/hl-bg.png) no-repeat;
+	width: 900px;
+	height: 305px
+}
+/**/
+ul.headline,
+ul.headline * {margin:0px; padding:0px}
+ul.headline {width:900px; height:305px; list-style:none; overflow:hidden; margin: 0 0 0 0}
+ul.headline li {display:inline; float:left}
+ul.headline li.img {position: relative; width:580px; height:305px; overflow:hidden}
+ul.headline li.img a {}
+ul.headline li.img a:hover {}
+ul.headline li.img a img {width:580px; height:305px;}
+ul.headline .hl-transparent {position: absolute; top: 235px; width: 580px; height: 70px; overflow: hidden; opacity: 0.7; filter: alpha(opacity=70);  background-color: #000}
+ul.headline .hl-title {position: absolute; top: 245px; height: 25px; overflow:hidden; padding: 0 0 0 20px; font: 100 18pt/25px "Trebuchet MS",Arial}
+ul.headline .hl-title a {color: #fff}
+ul.headline .hl-title a:hover {text-decoration: none}
+ul.headline .hl-spot {position: absolute; top: 273px; height: 22px; overflow:hidden; padding: 0 0 0 20px; font: 100 11pt/25px "Trebuchet MS",Arial}
+ul.headline .hl-spot a {color: #fff}
+ul.headline .hl-spot a:hover {text-decoration: none}
+ul.headline li.news {width:320px; height:305px; overflow:hidden}
+ul.headline li.news div#headline_items {margin: 15px 0 5px 30px}
+ul.headline li.news div#headline_items div.item {padding:0 0px 0px 0px; margin: 0 0 0px 0; color:#cc0000; font-weight:bold; font-size:12px; white-space:nowrap}
+ul.headline li.news div#headline_items div.item a {color:#000; text-decoration:none; font: 700 9.5pt/36px "Trebuchet MS",Tahoma,Arial,Helvetica,sans-serif}
+ul.headline li.news div#headline_items div.item a:hover {color: #cc0000; text-decoration:none}
+
+ul.headline .page,
+ul.headline .page * {margin:0px;padding:0px}
+ul.headline .page {position: relative; padding: 8px 0 0 0; width: 200px; margin: 0 0 0 120px; overflow: hidden}
+ul.headline .page ul {list-style:none}
+ul.headline .page ul li {display:inline;margin-left:2px}
+ul.headline .page ul li a {
+	display: block;
+	width: 35px;
+	height: 19px;
+	overflow: hidden;
+	color:#fff;
+	font-family:tahoma,verdana;
+	font-size:12px;
+	text-decoration:none;
+	text-align: center;
+	padding: 6px 0 0 0;
+	background: url(images/headline/hl-p2.png) no-repeat;
+}
+ul.headline .page ul li a:hover {text-decoration:underline}
+ul.headline .page ul li.active a {
+	display: block;
+	width: 35px;
+	height: 19px;
+	overflow: hidden;
+	color:#000;
+	font-weight: bold;
+	text-align: center;
+	padding: 6px 0 0 0;
+	background: url(images/headline/hl-p1.png) no-repeat;
+}
+ul.headline .page ul li#next a {color:#033978;vertical-align:text-bottom;background:none;border:none}
+
+.rCities {background: #ececec url(images/menu/rlocal-bottom.png) bottom no-repeat; padding: 0 0 10px 0}
+.rCities h1 {
+	background: #ececec url(images/menu/rlocal-header.png) no-repeat;
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	color: #fff;
+	height: 28px;
+	padding: 7px 0 0 10px
+}
+.rCities .items {position: relative; padding: 5px 0 0 10px; margin: 0 0 15px 0; height: 207px; overflow: hidden}
+.rCities .item {font-family: "Trebuchet MS"; font-size: 12px; margin: 0 5px 0 0; width: 90px; overflow: hidden}
+.rCities .item a {display: block; padding: 2px 0 2px 0; width: 90px; overflow:hidden; color: #000}
+.rCities .item a:hover {background-color: #e1e1e1; color: #cc0000; text-decoration: none}
+.rCities .sep {
+	border-bottom: 1px solid #ccc;
+}
+.rCities .expand {width: 110px; margin: auto}
+
+.currency {
+	background: url(images/headline/currency_bg.png) no-repeat;
+	width: 900px;
+	height: 35px;
+	font-family: Verdana;
+	font-size: 8pt
+}
+.currency .currency-left {
+	margin: 8px 0 0 150px;
+}
+.currency .currency-right {
+	margin: 8px 30px 0 0;
+	font-family: Tahoma;
+	font-size: 8pt;
+	color: #404040
+}
+.currency .currency-left span {}
+.currency .buy_up {color: #009900; font-weight: bold}
+.currency .buy_down {color: #CC0000; font-weight: bold}
+.currency .buy_oops {color: #0006FF; font-weight: bold}
+.currency .percent {margin: 0 40px 0 0}
+
+#facebook_popup{display: none;}
+.golge { width:100%; height:100% !important; height:auto ; background:#000; opacity: .5; filter: alpha(opacity=50); -ms-filter: 'alpha(opacity=5)'; -khtml-opacity: .5; -moz-opacity: .50; position:fixed; top:0; left:0; z-index:100;}
+.facebook_like_popup { background:url(http://www.haberciler.com/css/images/haberciler_facebox/bg_facebook_tum_siteler.png) no-repeat !important; height:466px; width:620px; padding:0 13px 20px 0;  font:11px/11px Tahoma, Verdana, Sans-Serif; z-index:101; }
+.facebook_lp_inner { height:398px; width:598px; margin:11px 0 0 11px; padding:10px 0; position:relative; }
+.facebook_lp_ul { width:100%; text-align:center; margin-top: 10px; }
+.facebook_lp_like { width:100%; margin:0; }
+.facebook_lp_like a { margin:80px 0 0 245px; display:inline-block; padding:0; }
+.fb_close { height:25px; width:92px; position:absolute; bottom:-41px; right:0; }
+.fb-like-box{position:relative; margin-left:235px; margin-top: 50px;}  
+
+#facebox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 502;
+  text-align: left;
+}
+
+
+#facebox .popup{
+  position:relative;
+}
+
+#facebox .content {
+  display:table;
+  width: 370px;
+  padding: 10px;  
+}
+
+#facebox .content > p:first-child{
+  margin-top:0;
+}
+#facebox .content > p:last-child{
+  margin-bottom:0;
+}
+
+#facebox .close{
+  position:absolute;
+  top:5px;
+  right:5px;
+  padding:2px;
+  background:#fff;
+}
+#facebox .close img{
+  opacity:0.3;
+}
+#facebox .close:hover img{
+  opacity:1.0;
+}
+
+#facebox .loading {
+  text-align: center;
+}
+
+#facebox .image {
+  text-align: center;
+}
+
+#facebox img {
+  border: 0;
+  margin: 0;
+}
+
+#facebox_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+}
+
+.facebox_hide {
+  z-index:-100;
+}
+
+.facebox_overlayBG {
+  background-color: #000;
+  z-index: 501;
+}
+

@@ -1,0 +1,13 @@
+* {margin:0; padding: 0; }
+.soldan {float:left;}
+#soltaraf {margin-top:20px; background: #F5F5F5; width: 300px; height: 750px; position: relative; left:10px; border-radius: 4px; overflow: auto;}
+#soltaraf ul {list-style: none;}
+#soltaraf ul li {padding:8px; border-bottom: 1px solid #ddd;}
+#ortataraf ol {list-style: none;}
+#ortataraf ol li {background: #eee}
+
+.cevapsayfasi {margin:10px;}
+.cevapsayfasi h2 {background: #A24468; color:white; padding:10px;}
+.cevapsayfasi ol li{position:relative; left:10px; background: #f5f5f5; border:1px solid #ddd; padding:10px;margin-bottom: 30px; font-family: helvetica; font-size:14px;}
+.cevapsayfasi h2 {margin-bottom: 20px; font-family: helvetica}
+.temizle{clear:both;}

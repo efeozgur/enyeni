@@ -1,0 +1,12 @@
+body {
+	background-image: url('../img/bg3.jpg');
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+.kutu {
+	background: #eee;
+	margin: 10px 0 0 10px;
+	border-radius: 5px;
+	padding: 10px
+}
