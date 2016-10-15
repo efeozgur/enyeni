@@ -1,0 +1,26 @@
+#ana {
+	width:1400px;
+	height:720px;
+	margin:auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -700px;
+	margin-top:-360px;
+}
+
+#ana ul {list-style: none;}
+#ana ul li {
+	border-radius:5px; 
+	float: left;
+	padding: 10px; 
+	margin:5px; 
+	width: 500px; 
+	height: 500px;
+	border:1px solid  #ddd; 
+	font-family: 'Inconsolata', monospace; 
+	font-size: 12px;  
+	overflow: auto; 
+}
+#ana ul h3 {text-align: center; font-family: 'Inconsolata'; font-size:30px}
+#ayrinti {border:1px solid #ddd; padding: 10px; }
